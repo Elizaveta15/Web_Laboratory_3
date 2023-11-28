@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+<HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=edge">
+    <META http-equiv="content-type" content="text/html; charset=utf-8">
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <META name="author" content="Smirnova E. RSATU IPB-21">
+    <META name="description" content="Shop">
+    <TITLE>Магазин покупок</TITLE>
+    <LINK href="css/main.css" type="text/css" rel="stylesheet">
+</HEAD>
+<BODY>
+<HEADER>
+    <H1>Главная страница</H1>
+</HEADER>
+<MENU>
+    <LI><A href="#" class="Link">Главная страница</A></LI>
+    <LI><A href="pages/authorization.html" class="Link">Авторизация</A></LI>
+    <LI><A href="pages/registration.html" class="Link">Регистрация</A></LI>
+</MENU>
+<MAIN>
+    <SECTION>
+        <H2>Приветствуем в магазине &laquo;Всё для всех&raquo;</H2>
+        <FORM>
+            <FIELDSET>
+                <LEGEND><H2>Форма для покупок:</H2></LEGEND>
+                <DIV class="Field">
+                    <LABEL for="courses">Тип покупки:</LABEL>
+                    <SELECT id="courses" name="student_courses">
+                        <OPTION value="appliances">Бытовая техника</OPTION>
+                        <OPTION value="chemistry">Бытовая химия</OPTION>
+                        <OPTION value="furniture">Мебель</option>
+                    </SELECT>
+                </DIV>
+                <DIV class="Field">
+                    <LABEL for="name">Наименование товара </LABEL>
+                    <INPUT autofocus required type="text" id="name">
+                </DIV>
+                <DIV class="Field">
+                    <LABEL for="date">Дата доставки </LABEL>
+                    <INPUT required type="date" id="date">
+                </DIV>
+                <DIV class="Field">
+                    <DIV>Тип доставки:</DIV>
+                    <DIV class="Field">
+                        <LABEL for="shop" class="light">В пункт выдачи</LABEL>
+                        <INPUT type="radio" id="shop" value="shop" name="delivery" checked>
+                    </DIV>
+                    <DIV class="Field">
+                        <LABEL for="home" class="light">Курьером на дом</LABEL>
+                        <INPUT type="radio" id="home" value="home" name="delivery">
+                    </DIV>
+                </DIV>
+            </FIELDSET>
+            <DIV class="Button-container">
+                <INPUT class="Button" type="submit" value="Отправить">
+                <INPUT class="Button" type="reset" value="Сбросить">
+            </DIV>
+        </FORM>
+    </SECTION>
+</MAIN>
+<FOOTER>
+    <ADDRESS>
+        &copy; Разработала Смирнова Е.
+    </ADDRESS>
+</FOOTER>
+</BODY>
+</HTML>
